@@ -46,7 +46,7 @@ export const Home = () => {
           <div className="md:max-w-[400px] flex flex-col gap-6 my-14">
             <div>
               <h1 className="text-[#13183f] xl:text-[52px] text-[40px] font-extrabold leading-[50px]">
-                Maximize skill, minimize budget
+                Sindhu College, of Education
               </h1>
             </div>
             <div>
