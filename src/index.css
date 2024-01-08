@@ -2,6 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
+.nav-link {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  transition: background-color 0.3s, opacity 0.3s;
+}
+
+@media (max-width: 768px) {
+  .nav-link {
+    display: block;
+    text-align: right;
+    margin-bottom: 0.5rem;
+  }
+}
+
 
 /* body{
 

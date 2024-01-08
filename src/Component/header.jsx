@@ -8,21 +8,21 @@ export const Header = () => {
   return (
     <header className=" ">
    
-      <nav>
+      <nav className="flex justify-end gap-2 mb-2 mr-3 mt-4 text-bold">
       
-        <ul className="flex justify-end gap-16 mb-2 mr-3 mt-4 text-bold hover:opacity-80 bg-[#13183f] rounded-3xl text-white font-bold py-2 px-4 group relative overflow-hidden">
+        <ul className="flex flex-wrap items-center">
        
-          <li>
-            <NavLink to="/">Home</NavLink>
+          <li className="mb-2 md:mb-0">
+            <NavLink to="/" className="nav-link" >Home</NavLink>
           </li>
-          <li>
-            <NavLink to="/about">About</NavLink>
+          <li  className="mb-2 md:mb-0">
+            <NavLink to="/about" className="nav-link">About</NavLink>
           </li>
-          <li>
-            <NavLink to="/Contacts">Contacts</NavLink>
-          </li>
-          <li>
-            <NavLink to="/login">LogIn</NavLink>
+          <li  className="mb-2 md:mb-0">
+            <NavLink to="/Contacts" className="nav-link">Contacts</NavLink>
+          </li >
+          <li  className="mb-2 md:mb-0">
+            <NavLink to="/login" className="nav-link">LogIn</NavLink>
           </li>
         </ul>
       </nav>

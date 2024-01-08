@@ -1,4 +1,15 @@
 import React, { useEffect, useState } from 'react'
+// import Image from "../src/assets/assets/class.png";
+// import Image from  "../src/assets/assets/collage.png";
+// import Image from "../src/assets/assets/fest copy.png";
+// import Image from "../src/assets/assets/puja.png";
+// import Image from "../src/assets/assets/class.png";
+import classImg from "../src/assets/assets/class.png";
+// import collageImg from "../src/assets/assets/collage.png";
+import festImg from "../src/assets/assets/fest copy.png";
+import pujaImg from "../src/assets/assets/puja.png";
+import logoImg from "../src/assets/assets/logo.png";
+
 import { Header } from './Component/header'
 const CardJson = [
   {
@@ -13,18 +24,18 @@ const CardJson = [
   },
   {
     icon: "https://tse3.mm.bing.net/th?id=OIP.s8rq1tgDTeTgZM7oCvV5KAHaE7&pid=Api&P=0&h=180",
-    title: "Photography",
-    desc: "Explore critical fundamentals like lighting, composition, and focus to capture exceptional photos.",
+    title: "BSC",
+    desc: "Bachelor of Science, popularly known as BSc, is an undergraduate degree programme specialising in science subjects. Bachelor of Science or BSc courses are mainly awarded to students ",
   },
   {
     icon: "https://tse1.mm.bing.net/th?id=OIP.fQalnNda5edc_zo9KgN6FAHaE8&pid=Api&P=0&h=180",
-    title: "crypto",
-    desc: "All you need to know to get started investing in crypto. Go from beginner to advanced with this 54 hour course.",
+    title: "BCA",
+    desc: "BCA is a three-year undergraduate course in computer application. This degree gives good knowledge in areas related to computer science, the IT industry and networking..",
   },
   {
     icon: "https://tse2.mm.bing.net/th?id=OIP.yF8jz90VNEt1hK9DVu39QQHaE8&pid=Api&P=0&h=180",
-    title: "Business",
-    desc: "A step-by-step playbook to help you start, scale, and sustain your business without outside investment.",
+    title: "MBA",
+    desc: " MBA is a 2-year postgraduate program that focuses on developing skills and knowledge in fields of business and management. MBA is the most sought-after postgraduate degree.",
   },
 ];
 
@@ -58,13 +69,15 @@ export const Home = () => {
           </div>
           <div className=" md:-right-32 md:left-auto xl:-right-80 xl:-top-20 md:-top-50 lg:-right-28 lg:-top-14 ">
             <img
-              src="public/WhatsApp Image 2024-01-07 at 3.48.13 PM (1).jpeg"
-              alt=""
+              src={logoImg}
+              //"src/assets/assets/logo.png"
+              alt="logo"
               className="relative md:max-w-[500px] lg:max-w-[600px] xl:max-w-[650px] hidden md:block"
             />
             <img
-              src="public/WhatsApp Image 2024-01-07 at 3.48.13 PM (1).jpeg"
-              alt="mobileback"
+              src={logoImg}
+              //"src/assets/assets/logo.png"
+              alt="logo"
               className="relative -bottom-72 md:hidden block max-w-[343px] sm:max-w-[400px]"
             />
           </div>
@@ -103,9 +116,10 @@ export const Home = () => {
         <div class="semi-circle -rotate-[47deg] w-[295px] h-[271px] rounded-[100px_100px_0_0] sm:rounded-[400px_400px_0_0] sm:w-[411px] sm:h-[251px] -top-[123px] -left-[139px] sm:-left-[118px] sm:-top-[41px] absolute bg-[#f1f5fd] z-50"></div>
         <div className="relative h-[200px] w-[200px] sm:h-[300px] sm:w-[300px] group rounded-full bg-[#F1F5FD] cursor-pointer">
           <img
-            src="public/WhatsApp Image 2024-01-07 at 3.48.14 PM (1).jpeg"
+            src={pujaImg}
+            //"src/assets/assets/puja.png"
             className="h-[200px] w-[200px] sm:h-[300px] sm:w-[300px] rounded-full z-40 relative border border-[5px] object-cover object-top border-[#f1f5fd] relative z-[60]"
-            alt="ceo"
+            alt="pujaimg"
           />
           <div className="h-0 w-0 group-hover:h-[290px] group-hover:w-[290px] group-hover:sm:h-[400px] group-hover:sm:w-[400px] bg-gradient-to-r transition-all duration-300 ease-in-out from-pink-500 via-red-500 to-yellow-500 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 rounded-full"></div>
           <div className="absolute transition-all group-hover:duration-300 group-hover:delay-200 group-hover:ease-in-out top-12 group-hover:top-[41px] group-hover:left-[201px] group-hover:sm:top-[80px] left-0 group-hover:sm:left-[304px] hover:delay-0 hover:duration-0 cursor-pointer">
@@ -187,9 +201,10 @@ export const Home = () => {
         <div class="semi-circle -rotate-[47deg] w-[295px] h-[271px] rounded-[100px_100px_0_0] sm:rounded-[400px_400px_0_0] sm:w-[411px] sm:h-[251px] -top-[123px] -left-[139px] sm:-left-[118px] sm:-top-[41px] absolute bg-[#f1f5fd] z-50"></div>
         <div className="relative h-[200px] w-[200px] sm:h-[300px] sm:w-[300px] group rounded-full bg-[#F1F5FD] cursor-pointer">
           <img
-            src="public/WhatsApp Image 2024-01-07 at 3.48.13 PM (2).jpeg"
+            src={classImg}
+            //"src/assets/assets/class.png"
             className="h-[200px] w-[200px] sm:h-[300px] sm:w-[300px] rounded-full z-40 relative border border-[5px] object-cover object-top border-[#f1f5fd] relative z-[60]"
-            alt="customer"
+            alt="classIMg"
           />
           <div className="h-0 w-0 group-hover:h-[290px] group-hover:w-[290px] group-hover:sm:h-[400px] group-hover:sm:w-[400px] bg-gradient-to-r transition-all duration-300 ease-in-out from-green-300 via-blue-500 to-purple-600 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 rounded-full"></div>
           <div className="absolute transition-all group-hover:duration-300 group-hover:delay-200 group-hover:ease-in-out top-12 group-hover:top-[41px] group-hover:left-[201px] group-hover:sm:top-[80px] left-0 group-hover:sm:left-[304px] hover:delay-0 hover:duration-0 cursor-pointer">
@@ -271,9 +286,10 @@ export const Home = () => {
         <div class="semi-circle -rotate-[47deg] w-[295px] h-[271px] rounded-[100px_100px_0_0] sm:rounded-[400px_400px_0_0] sm:w-[411px] sm:h-[251px] -top-[123px] -left-[139px] sm:-left-[118px] sm:-top-[41px] absolute bg-[#f1f5fd] z-50"></div>
         <div className="relative h-[200px] w-[200px] sm:h-[300px] sm:w-[300px] group rounded-full bg-[#F1F5FD] cursor-pointer">
           <img
-            src="public/WhatsApp Image 2024-01-07 at 3.48.14 PM.jpeg"
+            src={festImg}
+            //"src/assets/assets/fest copy.png"
             className="h-[200px] w-[200px] sm:h-[300px] sm:w-[300px] rounded-full z-40 relative border border-[5px] object-cover object-right-top border-[#f1f5fd] relative z-[60]"
-            alt="user"
+            alt="festImg"
           />
           <div className="h-0 w-0 group-hover:h-[290px] group-hover:w-[290px] group-hover:sm:h-[400px] group-hover:sm:w-[400px] bg-gradient-to-r transition-all duration-300 ease-in-out from-pink-300 via-purple-300 to-indigo-400 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 rounded-full"></div>
           <div className="absolute transition-all group-hover:duration-300 group-hover:delay-200 group-hover:ease-in-out top-12 group-hover:top-[41px] group-hover:left-[201px] group-hover:sm:top-[80px] left-0 group-hover:sm:left-[304px] hover:delay-0 hover:duration-0 cursor-pointer">
@@ -426,12 +442,12 @@ export const Home = () => {
     <div className="flex justify-between items-center  py-5 object-cover max-w-70px max-h-70px h-5/6 w-6/12">
         <div className="px-5 max-w-3xl lg:max-w-5xl xl:max-w-5xl w-full flex justify-between mx-auto">
           <a href="#_" className="flex items-center">
-            <img src="public/WhatsApp Image 2024-01-07 at 3.48.13 PM (1).jpeg" alt="Logo" />
-            <img src="public/WhatsApp Image 2024-01-07 at 3.48.13 PM (2).jpeg" alt="Logo" />
-            {/* <img src="public/WhatsApp Image 2024-01-07 at 3.48.13 PM.jpeg" alt="Logo" /> */}
-            {/* <img src="public/WhatsApp Image 2024-01-07 at 3.48.14 PM (1).jpeg" alt="Logo" /> */}
-            {/* <img src="public/WhatsApp Image 2024-01-07 at 3.48.14 PM.jpeg" alt="Logo" /> */}
-            {/* <img src="public/WhatsApp Image 2024-01-07 at 3.48.15 PM.jpeg" alt="Logo" /> */}
+            <img src={logoImg}
+            //"src/assets/assets/logo.png" alt="Logo" 
+            />
+            <img src={pujaImg}
+            //"src/assets/assets/puja.png" alt="Logo" 
+            />
 
           </a>
           
