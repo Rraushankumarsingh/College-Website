@@ -5,7 +5,7 @@ import { About } from "./About";
 import { Contacts } from "./Contacts";
 import { LogIn } from "./LogIn";
 import { Errorpage } from "./Errorpage";
-// import { Registion } from "./Registion";
+import { Registion } from "./Registion";
 // import {PrivateRoute} from './PrivateRoute'
 import { Header } from "./Component/header";
 
@@ -18,7 +18,7 @@ function App() {
         <Route path="/About" element={<About />} /> {/* Fix: added equal sign after element */}
         <Route path="/Contacts" element={<Contacts />} />
         <Route path="/login" element={<LogIn />} />
-        {/* <Route path="/Registion" element={<Registion />} /> */}
+        <Route path="/Registion" element={<Registion />} />
         <Route path="*" element={<Errorpage />} />
       </Routes>
     </>

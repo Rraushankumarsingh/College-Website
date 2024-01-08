@@ -1,11 +1,6 @@
 import React, { useEffect, useState } from 'react'
-// import Image from "../src/assets/assets/class.png";
-// import Image from  "../src/assets/assets/collage.png";
-// import Image from "../src/assets/assets/fest copy.png";
-// import Image from "../src/assets/assets/puja.png";
-// import Image from "../src/assets/assets/class.png";
+
 import classImg from "../src/assets/assets/class.png";
-// import collageImg from "../src/assets/assets/collage.png";
 import festImg from "../src/assets/assets/fest copy.png";
 import pujaImg from "../src/assets/assets/puja.png";
 import logoImg from "../src/assets/assets/logo.png";
@@ -47,7 +42,7 @@ export const Home = () => {
     <div className="h-full w-full bg-gradient-to-b from-white to-[#f0f1ff] bg-no-repeat overflow-hidden">
       <div className="px-5 xl:px-0 max-w-3xl lg:max-w-5xl xl:max-w-5xl w-full mx-auto relative">
         
-        <div className="flex justify-start items-end my-5 xl:my-20">
+        <div className="flex flex-col items-center md:flex-row md:justify-between">
           <div className="md:max-w-[400px] flex flex-col gap-6 my-14">
             <div>
               <h1 className="text-[#13183f] xl:text-[52px] text-[40px] font-extrabold leading-[50px]">
@@ -63,27 +58,27 @@ export const Home = () => {
             <div>
               <button className="py-3 px-7 text-white font-bold bg-gradient-to-r from-red-500 to-pink-600 rounded-3xl group relative overflow-hidden">
                 Get Started
-                <div className="absolute duration-300 inset-0 w-full h-full transition-all scale-0 group-hover:scale-100 group-hover:bg-white/30 rounded-2xl"></div>
+                <span className="absolute duration-300 inset-0 w-full h-full transition-all scale-0 group-hover:scale-100 group-hover:bg-white/30 rounded-2xl"></span>
               </button>
             </div>
           </div>
-          <div className=" md:-right-32 md:left-auto xl:-right-80 xl:-top-20 md:-top-50 lg:-right-28 lg:-top-14 ">
+          <div className=" md:-right-auto md:left-auto xl:-right-80 xl:-top-20 md:-top-50 lg:-right-28 lg:-top-14 ">
             <img
               src={logoImg}
               //"src/assets/assets/logo.png"
               alt="logo"
-              className="relative md:max-w-[500px] lg:max-w-[600px] xl:max-w-[650px] hidden md:block"
+              className="relative max-w-full mx-auto md:max-w-[500px] lg:max-w-[600px]"
             />
-            <img
+            {/* <img
               src={logoImg}
               //"src/assets/assets/logo.png"
               alt="logo"
               className="relative -bottom-72 md:hidden block max-w-[343px] sm:max-w-[400px]"
-            />
+            /> */}
           </div>
           
         </div>
-        <div className="pt-56 md:pt-0 grid sm:grid-cols-3 lg:grid-cols-3 gap-20 my-24 lg:my-32 place-items-center sm:place-items-stretch">
+        <div className="pt-56 md:pt-0 grid sm:grid-cols-3 lg:grid-cols-3 gap-20 my-15 lg:my-32 place-items-center sm:place-items-stretch">
           <div className="hover:drop-shadow-2xl w-full bg-gradient-to-r from-pink-500 to-red-600 sm:max-w-xs rounded-xl px-10 py-5 text-white text-xl font-extrabold leading-8 shadow-xl">
             Check out our most popular courses which is provided By the Sindhu Collage of Education!
           </div>
